@@ -18,7 +18,7 @@ export default class App extends Component {
   }
 
   performSearch = (query = '') => {
-    fetch(`http://api.giphy.com/v1/gifs/search?q=${query}&api_key=dc6zaTOxFJmzC&limit=12`, {mode: 'cors'})
+    fetch(`http://api.giphy.com/v1/gifs/search?q=${query}&api_key=dc6zaTOxFJmzC&limit=1`, {mode: 'cors'})
     /*fetch(`https://api.tenor.com/v1/search?q=${query}&key=LIVDSRZULELA&limit=1&anon_id=3a76e56901d740da9e59ffb22b988242`, {mode: 'cors'})*/
     .then(response => response.json())
     .then(responseData => {
